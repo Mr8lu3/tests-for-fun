@@ -4,6 +4,7 @@ export function addLog(msg) {
   const ts = new Date().toISOString();
   logEl.textContent += `[${ts}] ${msg}\n`;
   logEl.scrollTop = logEl.scrollHeight;
+ qsf0uw-codex/create-fuzzing-playground-web-app
 
   // Also send log to server for remote viewing
   fetch('/api/log', {
@@ -11,6 +12,8 @@ export function addLog(msg) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ message: msg })
   }).catch(() => {});
+
+ main
 }
 
 async function loadAndRun(modulePath) {
@@ -33,6 +36,7 @@ document.getElementById('runAll').addEventListener('click', async () => {
     await loadAndRun(btn.getAttribute('data-mod'));
   }
 });
+ qsf0uw-codex/create-fuzzing-playground-web-app
 
 // Fetch logs from the server and display them
 document.getElementById('fetchLogs').addEventListener('click', async () => {
@@ -46,3 +50,5 @@ document.getElementById('fetchLogs').addEventListener('click', async () => {
     addLog('Failed to fetch logs: ' + e);
   }
 });
+
+ main
