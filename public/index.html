@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Memory-Safety Fuzzing Playground</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div id="container">
+  <div id="sidebar">
+    <button data-mod="fuzzer-canvas.js">Canvas</button>
+    <button data-mod="fuzzer-webgl.js">WebGL</button>
+    <button data-mod="fuzzer-audio.js">Audio</button>
+    <button data-mod="fuzzer-css.js">CSS</button>
+    <button data-mod="fuzzer-fetch.js">Fetch</button>
+    <button data-mod="fuzzer-wasm.js">WebAssembly</button>
+    <button data-mod="fuzzer-localstorage.js">localStorage</button>
+    <button data-mod="fuzzer-regex.js">Regex</button>
+    <button id="runAll">Run All</button>
+    <button id="fetchLogs">Fetch Logs</button>
+  </div>
+  <div id="main">
+    <pre id="logConsole"></pre>
+  </div>
+</div>
+<script type="module" src="/static/ui.js"></script>
+</body>
+</html>
