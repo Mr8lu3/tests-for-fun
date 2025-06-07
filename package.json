@@ -1,0 +1,13 @@
+{
+  "name": "fuzzing-playground",
+  "version": "1.0.0",
+  "description": "Minimal web app for memory-safety fuzzing research",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests specified\""
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
