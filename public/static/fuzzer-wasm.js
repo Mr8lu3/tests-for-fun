@@ -16,6 +16,13 @@ function makeModule(val) {
 
 export async function startFuzz(log) {
   log('WebAssembly fuzzer start');
+ qsf0uw-codex/create-fuzzing-playground-web-app
+  if (typeof WebAssembly === 'undefined') {
+    log('WebAssembly not supported');
+    log('WebAssembly fuzzer done');
+    return;
+  }
+main
   for (let i = 0; i < 5; i++) {
     const v = Math.floor(Math.random() * 256);
     const bytes = makeModule(v);
